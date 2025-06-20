@@ -9,7 +9,7 @@ Predict flight delays in real-time using streaming data, Apache Kafka, online ma
 - 🌐 **Real-time Data**: Live flight data via [AviationStack API](https://aviationstack.com/).
 - ⚡ **Streaming with Kafka**: Producer-consumer architecture using Kafka.
 - 📊 **Dashboard with Streamlit**: Visualize predictions, flight info, and model performance live.
-- 🔄 **Self-updating model**: Learns from actual outcomes when available.
+- 🔄 **Self-updating model**: Learns from actual outcomes when available with Online Machine Learning from River.
 
 ---
 
