@@ -160,23 +160,34 @@ Metrics are updated in real-time as labeled flight data becomes available:
 
 ```json
 {
-  "flight": {
-    "iata": "EK313"
-  },
-  "departure": {
-    "iata": "HND",
-    "scheduled": "2025-06-18T00:05:00+00:00",
-    "actual": "2025-06-18T00:42:00+00:00",
-    "delay": 37
-  },
-  "arrival": {
-    "iata": "DXB",
-    "scheduled": "2025-06-18T05:45:00+00:00",
-    "estimated": "2025-06-18T05:48:00+00:00",
-    "delay": 3
-  },
-  "airline": {
-    "name": "Emirates"
+  "key": "EK313",
+  "value": {
+    "flight_date": "2025-06-18",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Haneda Airport", "timezone": "Asia/Tokyo", "iata": "HND",
+      "icao": "RJTT", "terminal": "3", "gate": "109","delay": 37,
+      "scheduled": "2025-06-18T00:05:00+00:00",
+      "estimated": "2025-06-18T00:05:00+00:00",
+      "actual": "2025-06-18T00:42:00+00:00",
+      "estimated_runway": "2025-06-18T00:42:00+00:00",
+      "actual_runway": "2025-06-18T00:42:00+00:00"
+    },
+    "arrival": {
+      "airport": "Dubai", "timezone": "Asia/Dubai", "iata": "DXB",
+      "icao": "OMDB", "terminal": "3", "gate": null, "delay": 3, "baggage": "1",
+      "scheduled": "2025-06-18T05:45:00+00:00",
+      "estimated": "2025-06-18T05:48:00+00:00",
+      "actual": null, "estimated_runway": null, "actual_runway": null
+    },
+    "airline": {
+      "name": "Emirates", "iata": "EK", "icao": "UAE"
+    },
+    "flight": {
+      "number": "313", "iata": "EK313", "icao": "UAE313", "codeshared": null
+    },
+    "aircraft": null,
+    "live": null
   }
 }
 ```
