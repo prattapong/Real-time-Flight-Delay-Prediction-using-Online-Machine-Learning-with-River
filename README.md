@@ -21,6 +21,7 @@ Predict flight delays in real-time using streaming data, Apache Kafka, online ma
 | API (Producer)  |       | Topic       |        | River Model  |        | Dashboard   |
 +-----------------+       +------------+        +--------------+        +-------------+
 ```
+![Uploading image.png…]()
 
 ---
 
