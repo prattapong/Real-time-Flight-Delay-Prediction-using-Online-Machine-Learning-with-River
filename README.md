@@ -79,7 +79,15 @@ Create a `.env` file:
 AVIATIONSTACK_API_KEY=your_api_key_here
 ```
 
-### 4. Start Kafka Producer
+### 4. Start Kafka with Docker Compose
+
+```bash
+docker-compose up -d
+```
+
+Wait until all Kafka services are up and running.
+
+### 5. Start Kafka Producer
 
 ```bash
 python Producer.py
@@ -87,7 +95,7 @@ python Producer.py
 
 This script fetches live flights from AviationStack and sends them to Kafka.
 
-### 5. Run Streamlit Consumer Dashboard
+### 6. Run Streamlit Consumer Dashboard
 
 ```bash
 streamlit run Consumer.py
