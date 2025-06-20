@@ -1,0 +1,6 @@
+streamlit
+confluent-kafka
+pandas
+river
+altair
+python-dotenv
