@@ -15,12 +15,6 @@ Predict flight delays in real-time using streaming data, Apache Kafka, online ma
 
 ## 📁 Architecture Overview
 
-```text
-+-----------------+       +------------+        +--------------+        +-------------+
-| AviationStack   | --->  | Kafka       | ---->  | Consumer +    | --->   | Streamlit   |
-| API (Producer)  |       | Topic       |        | River Model  |        | Dashboard   |
-+-----------------+       +------------+        +--------------+        +-------------+
-```
 ![image](https://github.com/user-attachments/assets/fdfaeb40-4991-4b68-b7ff-f99b91a1bb3f)
 
 
