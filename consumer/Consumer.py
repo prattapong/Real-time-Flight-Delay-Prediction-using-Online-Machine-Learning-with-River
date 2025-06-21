@@ -334,7 +334,7 @@ def process_flight_message(flight_data: Dict) -> Dict:
         "departure_terminal": dep.get("terminal"),
         "arrival_terminal": arr.get("terminal"),
         "delay_time": delay_time,
-        "probability_of_delay": y_pred if not flight_has_occurred else None,
+        "probability_of_delay": y_pred, # if not flight_has_occurred else None,
         "status": "delayed" if delay_time else ("predicted" if not flight_has_occurred else "ontime"),
         "model_version": st.session_state.model_version
     }
@@ -366,10 +366,10 @@ def calculate_metrics(df: pd.DataFrame) -> Dict:
     # Calculate model performance metrics
     # Only calculate for flights that have both prediction and actual outcome
     evaluated_flights = df[(df['probability_of_delay'].notna()) & (df['scheduled_departure'].notna())]
-    
+
     if len(evaluated_flights) > 0:
         # Calculate predictions vs actuals
-        evaluated_flights['predicted_delay'] = evaluated_flights['probability_of_delay'] > 0.5
+        evaluated_flights['predicted_delay'] = evaluated_flights['probability_of_delay'] > 0.8
         evaluated_flights['actual_delay'] = evaluated_flights['delay_time'] > 0
         
         # True/False Positives/Negatives
