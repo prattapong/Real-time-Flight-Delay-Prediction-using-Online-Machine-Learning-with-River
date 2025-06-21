@@ -213,8 +213,8 @@ Metrics are updated in real-time as labeled flight data becomes available:
 - Rattapong Pojpatinya  
 - Tuksaporn Chaiyaraks  
 - Pakawat Naktubtee  
-- Atxxm  
-- MattHewz
+- Kanpitcha Panbualuang  
+- Kittitat Wattanasuntikul
 
 ---
 
